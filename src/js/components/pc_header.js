@@ -58,7 +58,7 @@ class PCHeader extends Component {
 
 
     render() {
-        let { getFieldDecorator } = this.props.form;
+        let { getFieldProps } = this.props.form;
         const userShow = this.state.hasLogined
             ? <Menu.Item key="logout" className="register">
                 <Button type="primary" htmlType="button">{this.state.userNickName}</Button>
@@ -107,17 +107,17 @@ class PCHeader extends Component {
                                     <Form mode="horizontal" onSubmit={this.handleSubmit.bind(this)}>
                                         <FormItem label="账户">
                                             <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
-                                                placeholder="请输入您的账号" {...getFieldDecorator('r_username')} />
+                                                placeholder="请输入您的账号" {...getFieldProps('r_username')} />
                                         </FormItem>
                                         <FormItem label="密码">
                                             <Input type="password"
                                                 prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
-                                                placeholder="请输入您的密码" {...getFieldDecorator('r_password')} />
+                                                placeholder="请输入您的密码" {...getFieldProps('r_password')} />
                                         </FormItem>
                                         <FormItem label="确认密码">
                                             <Input type="password"
                                                 prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
-                                                placeholder="请再次输入密码" {...getFieldDecorator('r_confirmPassword')} />
+                                                placeholder="请再次输入密码" {...getFieldProps('r_confirmPassword')} />
                                         </FormItem>
                                         <Button type="primary" htmlType="submit">注册</Button>
                                     </Form>
