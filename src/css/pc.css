@@ -16,3 +16,31 @@
 .footer {
     text-align: center;
 }
+
+.register {
+    float: right !important;
+}
+
+.container {
+    padding-top: 10px;
+}
+
+.leftContainer {
+    width: 409px;
+    height: 256px;
+    float: left;
+}
+
+.carousel {
+    width: 409px;
+    height: 256px;
+    margin-bottom: 80px;
+}
+
+.tabs_news {
+    padding-left: 10px;
+}
+
+.card{
+    margin-top: 500px
+}

@@ -38,7 +38,7 @@ class MobileHeader extends Component {
     };
 
     login() {
-
+        this.setModalVisible(true);
     }
 
     handleSubmit(e) {
